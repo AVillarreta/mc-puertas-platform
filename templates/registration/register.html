@@ -11,15 +11,15 @@
             <circle cx="31" cy="22" r="4.5" fill="none" stroke="#ffa000" stroke-width="1.6"/>
             <path d="M48 12q3 6 0 12M53 9q5 9 0 18" fill="none" stroke="#ffa000" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <h1 class="title">{% trans "Ask the user to present their Mastercard to take part in the activation." %}</h1>
+        <h1 class="title">{% trans "Ask the user to present their Mastercard card to participate in the activation." %}</h1>
     </div>
 
     <form class="card__form" method="post" novalidate data-form>
         {% csrf_token %}
-        <p class="lead">{% trans "Enter the following details to confirm the registration:" %}</p>
+        <p class="lead">{% trans "Enter the following details to confirm registration:" %}</p>
 
         <div class="field{% if form.id_number.errors %} has-error{% endif %}">
-            <label class="field__label" for="id_id_number">{% trans "ID number" %}</label>
+            <label class="field__label" for="id_id_number">{% trans "ID Number" %}</label>
             <input class="input" type="text" id="id_id_number" name="id_number" inputmode="text"
                    autocomplete="off" autocapitalize="characters" maxlength="50"
                    value="{{ form.id_number.value|default:'' }}"
@@ -28,7 +28,7 @@
         </div>
 
         <div class="field{% if form.email.errors %} has-error{% endif %}">
-            <label class="field__label" for="id_email">{% trans "Email (optional)" %}</label>
+            <label class="field__label" for="id_email">{% trans "Email" %}</label>
             <input class="input" type="email" id="id_email" name="email" inputmode="email"
                    autocomplete="off" autocapitalize="none" maxlength="254"
                    value="{{ form.email.value|default:'' }}" placeholder="{% trans 'Enter the email' %}">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="field{% if form.bank.errors %} has-error{% endif %}">
-            <span class="field__label" id="bank_label">{% trans "Card issuing bank" %}</span>
+            <span class="field__label" id="bank_label">{% trans "Card Issuing Bank" %}</span>
             <div class="select" data-select>
                 <input type="hidden" name="bank" value="{{ selected_bank }}" data-select-input>
                 <button type="button" class="input select__btn" aria-haspopup="listbox"
@@ -47,7 +47,7 @@
                 <div class="select__backdrop" data-select-backdrop></div>
                 <div class="select__panel" data-select-panel hidden>
                     <span class="select__handle"></span>
-                    <p class="select__title">{% trans "Card issuing bank" %}</p>
+                    <p class="select__title">{% trans "Card Issuing Bank" %}</p>
                     <ul class="select__list" role="listbox">
                         {% for bank in banks %}
                         <li class="select__option{% if selected_bank == bank.pk|stringformat:'s' %} is-selected{% endif %}"

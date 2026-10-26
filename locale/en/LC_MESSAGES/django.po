@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 11:09+0000\n"
+"POT-Creation-Date: 2026-10-26 11:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "banks"
 msgstr ""
 
-#: registration/models.py:69 templates/registration/register.html:22
+#: registration/models.py:69
 msgid "ID number"
 msgstr ""
 
@@ -120,17 +120,17 @@ msgid "Mastercard doors campaign"
 msgstr ""
 
 #: templates/registration/duplicate.html:7
-msgid "This ID has already been registered!"
+msgid "This ID was already registered!"
 msgstr ""
 
 #: templates/registration/duplicate.html:8
 msgid ""
-"Each ID can only take part once. Let the user know it is not possible to "
-"register again."
+"Each ID can only participate once. Inform the user that it cannot be "
+"registered again."
 msgstr ""
 
 #: templates/registration/duplicate.html:16
-msgid "Registration date"
+msgid "Registration Date"
 msgstr ""
 
 #: templates/registration/duplicate.html:22
@@ -138,16 +138,21 @@ msgid "Correct ID"
 msgstr ""
 
 #: templates/registration/duplicate.html:23
-msgid "Back to start"
+msgid "Return to home"
 msgstr ""
 
 #: templates/registration/register.html:14
 msgid ""
-"Ask the user to present their Mastercard to take part in the activation."
+"Ask the user to present their Mastercard card to participate in the "
+"activation."
 msgstr ""
 
 #: templates/registration/register.html:19
-msgid "Enter the following details to confirm the registration:"
+msgid "Enter the following details to confirm registration:"
+msgstr ""
+
+#: templates/registration/register.html:22
+msgid "ID Number"
 msgstr ""
 
 #: templates/registration/register.html:26
@@ -155,7 +160,7 @@ msgid "Enter the ID number"
 msgstr ""
 
 #: templates/registration/register.html:31
-msgid "Email (optional)"
+msgid "Email"
 msgstr ""
 
 #: templates/registration/register.html:34
@@ -164,7 +169,7 @@ msgstr ""
 
 #: templates/registration/register.html:39
 #: templates/registration/register.html:50
-msgid "Card issuing bank"
+msgid "Card Issuing Bank"
 msgstr ""
 
 #: templates/registration/register.html:44
