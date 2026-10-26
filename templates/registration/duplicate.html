@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n l10n tz %}
+
+{% block content %}
+<section class="card card--status">
+    <div class="badge badge--warning"><span>!</span></div>
+    <h1 class="title title--center">{% trans "This ID has already been registered!" %}</h1>
+    <p class="muted muted--center">{% trans "Each ID can only take part once. Let the user know it is not possible to register again." %}</p>
+
+    <dl class="summary">
+        <div class="summary__row">
+            <dt>ID</dt>
+            <dd>{{ registration.id_number }}</dd>
+        </div>
+        <div class="summary__row">
+            <dt>{% trans "Registration date" %}</dt>
+            <dd class="accent">{{ registration.created_at|localtime|date:"SHORT_DATETIME_FORMAT" }}</dd>
+        </div>
+    </dl>
+
+    <div class="actions">
+        <a class="btn btn--outline" href="{% url 'registration:register' country_code=country.code %}?id={{ registration.id_number|urlencode }}">{% trans "Correct ID" %}</a>
+        <a class="btn btn--primary" href="{% url 'registration:register' country_code=country.code %}">{% trans "Back to start" %}</a>
+    </div>
+</section>
+{% endblock %}

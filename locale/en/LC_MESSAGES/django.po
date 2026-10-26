@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 11:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: registration/admin.py:43
+msgid "Export selected to CSV"
+msgstr ""
+
+#: registration/forms.py:15
+msgid "Enter a valid email address."
+msgstr ""
+
+#: registration/forms.py:21 registration/forms.py:22
+msgid "Select the card issuing bank."
+msgstr ""
+
+#: registration/forms.py:30
+msgid "Enter the ID number."
+msgstr ""
+
+#: registration/forms.py:39
+msgid "The ID may only contain letters, numbers and dashes."
+msgstr ""
+
+#: registration/models.py:16
+msgid "Spanish"
+msgstr ""
+
+#: registration/models.py:17
+msgid "English"
+msgstr ""
+
+#: registration/models.py:20
+msgid "code"
+msgstr ""
+
+#: registration/models.py:21
+msgid "Short code used in the URL, e.g. pa, co, us."
+msgstr ""
+
+#: registration/models.py:23 registration/models.py:44
+msgid "name"
+msgstr ""
+
+#: registration/models.py:25
+msgid "language"
+msgstr ""
+
+#: registration/models.py:27 registration/models.py:46
+msgid "active"
+msgstr ""
+
+#: registration/models.py:31 registration/models.py:42
+#: registration/models.py:64
+msgid "country"
+msgstr ""
+
+#: registration/models.py:32
+msgid "countries"
+msgstr ""
+
+#: registration/models.py:45
+msgid "position"
+msgstr ""
+
+#: registration/models.py:50 registration/models.py:67
+msgid "bank"
+msgstr ""
+
+#: registration/models.py:51
+msgid "banks"
+msgstr ""
+
+#: registration/models.py:69 templates/registration/register.html:22
+msgid "ID number"
+msgstr ""
+
+#: registration/models.py:70
+msgid "email"
+msgstr ""
+
+#: registration/models.py:70
+msgid "Optional. Not unique: several IDs can share an email."
+msgstr ""
+
+#: registration/models.py:71
+msgid "registered at"
+msgstr ""
+
+#: registration/models.py:75
+msgid "registration"
+msgstr ""
+
+#: registration/models.py:76
+msgid "registrations"
+msgstr ""
+
+#: templates/base.html:7 templates/base.html:21
+msgid "User registration platform"
+msgstr ""
+
+#: templates/base.html:22
+msgid "Mastercard doors campaign"
+msgstr ""
+
+#: templates/registration/duplicate.html:7
+msgid "This ID has already been registered!"
+msgstr ""
+
+#: templates/registration/duplicate.html:8
+msgid ""
+"Each ID can only take part once. Let the user know it is not possible to "
+"register again."
+msgstr ""
+
+#: templates/registration/duplicate.html:16
+msgid "Registration date"
+msgstr ""
+
+#: templates/registration/duplicate.html:22
+msgid "Correct ID"
+msgstr ""
+
+#: templates/registration/duplicate.html:23
+msgid "Back to start"
+msgstr ""
+
+#: templates/registration/register.html:14
+msgid ""
+"Ask the user to present their Mastercard to take part in the activation."
+msgstr ""
+
+#: templates/registration/register.html:19
+msgid "Enter the following details to confirm the registration:"
+msgstr ""
+
+#: templates/registration/register.html:26
+msgid "Enter the ID number"
+msgstr ""
+
+#: templates/registration/register.html:31
+msgid "Email (optional)"
+msgstr ""
+
+#: templates/registration/register.html:34
+msgid "Enter the email"
+msgstr ""
+
+#: templates/registration/register.html:39
+#: templates/registration/register.html:50
+msgid "Card issuing bank"
+msgstr ""
+
+#: templates/registration/register.html:44
+msgid "Select the bank"
+msgstr ""
+
+#: templates/registration/register.html:69
+msgid "Confirm registration"
+msgstr ""
+
+#: templates/registration/success.html:9
+msgid "Registration successful!"
+msgstr ""
+
+#: templates/registration/success.html:10
+msgid "Guide the user to start the activation."
+msgstr ""
+
+#: templates/registration/success.html:11
+msgid "New registration"
+msgstr ""

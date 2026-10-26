@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 11:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: registration/admin.py:43
+msgid "Export selected to CSV"
+msgstr "Exportar seleccionados a CSV"
+
+#: registration/forms.py:15
+msgid "Enter a valid email address."
+msgstr "Ingresa un correo electrónico válido."
+
+#: registration/forms.py:21 registration/forms.py:22
+msgid "Select the card issuing bank."
+msgstr "Selecciona el banco emisor de la tarjeta."
+
+#: registration/forms.py:30
+msgid "Enter the ID number."
+msgstr "Ingresa el número de ID."
+
+#: registration/forms.py:39
+msgid "The ID may only contain letters, numbers and dashes."
+msgstr "El ID solo puede contener letras, números y guiones."
+
+#: registration/models.py:16
+msgid "Spanish"
+msgstr "Español"
+
+#: registration/models.py:17
+msgid "English"
+msgstr "Inglés"
+
+#: registration/models.py:20
+msgid "code"
+msgstr "código"
+
+#: registration/models.py:21
+msgid "Short code used in the URL, e.g. pa, co, us."
+msgstr "Código corto usado en la URL, p. ej. pa, co, us."
+
+#: registration/models.py:23 registration/models.py:44
+msgid "name"
+msgstr "nombre"
+
+#: registration/models.py:25
+msgid "language"
+msgstr "idioma"
+
+#: registration/models.py:27 registration/models.py:46
+msgid "active"
+msgstr "activo"
+
+#: registration/models.py:31 registration/models.py:42
+#: registration/models.py:64
+msgid "country"
+msgstr "país"
+
+#: registration/models.py:32
+msgid "countries"
+msgstr "países"
+
+#: registration/models.py:45
+msgid "position"
+msgstr "posición"
+
+#: registration/models.py:50 registration/models.py:67
+msgid "bank"
+msgstr "banco"
+
+#: registration/models.py:51
+msgid "banks"
+msgstr "bancos"
+
+#: registration/models.py:69 templates/registration/register.html:22
+msgid "ID number"
+msgstr "Número de ID"
+
+#: registration/models.py:70
+msgid "email"
+msgstr ""
+
+#: registration/models.py:70
+msgid "Optional. Not unique: several IDs can share an email."
+msgstr ""
+
+#: registration/models.py:71
+msgid "registered at"
+msgstr "fecha de registro"
+
+#: registration/models.py:75
+msgid "registration"
+msgstr "registro"
+
+#: registration/models.py:76
+msgid "registrations"
+msgstr "registros"
+
+#: templates/base.html:7 templates/base.html:21
+msgid "User registration platform"
+msgstr "Plataforma de registro de usuarios"
+
+#: templates/base.html:22
+msgid "Mastercard doors campaign"
+msgstr "Campaña Puertas Mastercard"
+
+#: templates/registration/duplicate.html:7
+msgid "This ID has already been registered!"
+msgstr "¡Este ID ya fue registrado!"
+
+#: templates/registration/duplicate.html:8
+msgid ""
+"Each ID can only take part once. Let the user know it is not possible to "
+"register again."
+msgstr ""
+"Cada ID solo puede participar una vez. Infórmale al usuario que no es "
+"posible registrarlo de nuevo."
+
+#: templates/registration/duplicate.html:16
+msgid "Registration date"
+msgstr "Fecha de registro"
+
+#: templates/registration/duplicate.html:22
+msgid "Correct ID"
+msgstr "Corregir ID"
+
+#: templates/registration/duplicate.html:23
+msgid "Back to start"
+msgstr "Volver al inicio"
+
+#: templates/registration/register.html:14
+msgid ""
+"Ask the user to present their Mastercard to take part in the activation."
+msgstr ""
+"Solicita al usuario que presente su tarjeta Mastercard para poder participar"
+" en la activación."
+
+#: templates/registration/register.html:19
+msgid "Enter the following details to confirm the registration:"
+msgstr "Ingresa los siguientes datos para confirmar el registro:"
+
+#: templates/registration/register.html:26
+msgid "Enter the ID number"
+msgstr "Ingresa el número de ID"
+
+#: templates/registration/register.html:31
+msgid "Email (optional)"
+msgstr "Correo electrónico (opcional)"
+
+#: templates/registration/register.html:34
+#| msgid "Enter the ID number"
+msgid "Enter the email"
+msgstr "Ingresa el correo electrónico"
+
+#: templates/registration/register.html:39
+#: templates/registration/register.html:50
+msgid "Card issuing bank"
+msgstr "Banco emisor de la tarjeta"
+
+#: templates/registration/register.html:44
+msgid "Select the bank"
+msgstr "Selecciona el banco"
+
+#: templates/registration/register.html:69
+msgid "Confirm registration"
+msgstr "Confirmar registro"
+
+#: templates/registration/success.html:9
+msgid "Registration successful!"
+msgstr "¡Registro exitoso!"
+
+#: templates/registration/success.html:10
+msgid "Guide the user to start the activation."
+msgstr "Guía al usuario para que inicie con la activación."
+
+#: templates/registration/success.html:11
+msgid "New registration"
+msgstr "Nuevo registro"
+
+#~ msgid "Change country"
+#~ msgstr "Cambiar de país"
+
+#~ msgid "The ID format is not valid for this country or bank."
+#~ msgstr "El formato del ID no es válido para este país o banco."
+
+#~ msgid "ID label"
+#~ msgstr "Nombre del ID"
+
+#~ msgid "How the ID is called in this country (e.g. Cédula, DNI, ID)."
+#~ msgstr "Cómo se llama el ID en este país (p. ej. Cédula, DNI, ID)."
+
+#~ msgid "ID placeholder"
+#~ msgstr "Ejemplo de ID"
+
+#~ msgid "ID format (regex)"
+#~ msgstr "Formato del ID (regex)"
+
+#~ msgid "Optional regular expression the ID must match. Banks can override it."
+#~ msgstr ""
+#~ "Expresión regular opcional que debe cumplir el ID. Los bancos pueden "
+#~ "reemplazarla."
+
+#~ msgid ""
+#~ "Overrides the country's ID format for this bank. Leave empty to use the "
+#~ "country's."
+#~ msgstr ""
+#~ "Reemplaza el formato de ID del país para este banco. Déjalo vacío para usar "
+#~ "el del país."
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#, python-format
+#~ msgid "%(label)s number"
+#~ msgstr "Número de %(label)s"

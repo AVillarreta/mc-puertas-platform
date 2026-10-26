@@ -1,0 +1,33 @@
+{% load static i18n %}<!DOCTYPE html>
+<html lang="{{ lang|default:'es' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="dark">
+    <title>{% block title %}{% trans "User registration platform" %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/kiosk.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <svg class="brand__logo" viewBox="0 0 48 30" aria-hidden="true">
+                <circle cx="16" cy="15" r="15" fill="#ff0000"/>
+                <circle cx="32" cy="15" r="15" fill="#ffa000"/>
+                <path d="M24 3.2a15 15 0 0 1 0 23.6 15 15 0 0 1 0-23.6z" fill="#ff5a00"/>
+            </svg>
+            <span class="brand__divider"></span>
+            <div class="brand__text">
+                <span class="brand__title">{% trans "User registration platform" %}</span>
+                <span class="brand__subtitle"><i class="dot"></i>{% trans "Mastercard doors campaign" %}</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="stage">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

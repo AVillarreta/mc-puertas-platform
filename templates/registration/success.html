@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<section class="card card--status">
+    <div class="badge badge--success">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h1 class="title title--center">{% trans "Registration successful!" %}</h1>
+    <p class="muted muted--center">{% trans "Guide the user to start the activation." %}</p>
+    <a class="btn btn--primary" href="{% url 'registration:register' country_code=country.code %}">{% trans "New registration" %}</a>
+</section>
+{% endblock %}
